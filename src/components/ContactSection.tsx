@@ -65,7 +65,7 @@ export default function ContactSection() {
             {/* Cinematic Background */}
             <div className="absolute inset-0 z-0 h-[120%] contact-bg">
                 <img 
-                    src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=2000&auto=format&fit=crop" 
+                    src="/images/mountain_trek.png" 
                     className="w-full h-full object-cover opacity-20 grayscale" 
                     alt="Mountain Landscape"
                 />

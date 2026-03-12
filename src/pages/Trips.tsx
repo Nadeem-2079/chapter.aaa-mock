@@ -97,7 +97,7 @@ export default function Trips() {
             slug: 'sunrise-kovalam-mar-15',
             name: 'Sunrise at Kovalam',
             location: 'Kerala, India',
-            image: 'https://images.unsplash.com/photo-1627000086207-77e8fd7d706f?q=80&w=1000&auto=format&fit=crop',
+            image: '/images/kovalam_hero.png',
             shortDesc: 'Sunday, March 15 - Experience the first light at the serene lighthouse beach. A perfect Sunday escape.',
             duration: '1 Day',
             price: 1999,
@@ -107,7 +107,7 @@ export default function Trips() {
             slug: 'aare-falls-mar-15',
             name: 'Aare Falls',
             location: 'Mumbai, India',
-            image: 'https://images.unsplash.com/photo-1542856334-2e2eaa88a71f?q=80&w=1000&auto=format&fit=crop',
+            image: '/images/aare_falls.png',
             shortDesc: 'March 15 - A refreshing trek to the hidden falls. Experience the lush trails and cold dips.',
             duration: '1 Day',
             price: 1499,
@@ -117,7 +117,7 @@ export default function Trips() {
             slug: 'aare-falls-mar-22',
             name: 'Aare Falls',
             location: 'Mumbai, India',
-            image: 'https://images.unsplash.com/photo-1542856334-2e2eaa88a71f?q=80&w=1000&auto=format&fit=crop',
+            image: '/images/aare_falls.png',
             shortDesc: 'Sunday, March 22 - A second chance to explore the hidden trails of Aare. Perfect for city dwellers.',
             duration: '1 Day',
             price: 1499,
@@ -127,7 +127,7 @@ export default function Trips() {
             slug: 'sunrise-kovalam-mar-22',
             name: 'Sunrise at Kovalam',
             location: 'Kerala, India',
-            image: 'https://images.unsplash.com/photo-1627000086207-77e8fd7d706f?q=80&w=1000&auto=format&fit=crop',
+            image: '/images/kovalam_hero.png',
             shortDesc: 'Sunday, March 22 - Join us for a magical morning at Kovalam. Peace, waves, and community.',
             duration: '1 Day',
             price: 1999,
@@ -140,7 +140,7 @@ export default function Trips() {
             slug: 'sunrise-at-kovalam-past-1',
             name: 'Sunrise at Kovalam',
             location: 'Kerala, India',
-            image: 'https://images.unsplash.com/photo-1627000086207-77e8fd7d706f?q=80&w=1000&auto=format&fit=crop',
+            image: '/images/kovalam_hero.png',
             shortDesc: 'Reliving the magical morning at the lighthouse beach. A hallmark of our community adventures.',
             duration: '1 Day',
             date: 'Feb 2026',
@@ -150,7 +150,7 @@ export default function Trips() {
             slug: 'aare-falls-past-1',
             name: 'Aare Falls Expedition',
             location: 'Mumbai, India',
-            image: 'https://images.unsplash.com/photo-1588392382834-a8af4fce2ae3?q=80&w=1000&auto=format&fit=crop',
+            image: '/images/aare_falls.png',
             shortDesc: 'Our previous trek to the hidden waterfalls. Lush trails, cold dips, and strong community building.',
             duration: '1 Day',
             date: 'Jan 2026',
@@ -160,7 +160,7 @@ export default function Trips() {
             slug: 'mumbai-heritage-walk-feb-2026',
             name: 'Mumbai Heritage Walk',
             location: 'Mumbai, India',
-            image: 'https://images.unsplash.com/photo-1562832135-0d7e12627750?q=80&w=1000&auto=format&fit=crop',
+            image: '/images/mumbai_heritage.png',
             shortDesc: 'A fascinating journey through Mumbai\'s iconic landmarks and hidden gems. History came alive!',
             duration: '1 Day',
             date: 'Feb 2026',
@@ -170,7 +170,7 @@ export default function Trips() {
             slug: 'ooty-weekend-getaway-jan-2026',
             name: 'Ooty Weekend Getaway',
             location: 'Tamil Nadu, India',
-            image: 'https://images.unsplash.com/photo-1596436889106-be35e95251db?q=80&w=1000&auto=format&fit=crop',
+            image: '/images/ooty_hills.png',
             shortDesc: 'A refreshing escape to the "Queen of Hill Stations". Boating, botanical gardens, and beautiful views.',
             duration: '2 Days',
             date: 'Jan 2026',
@@ -183,7 +183,7 @@ export default function Trips() {
             {/* Page Header */}
             <div className="max-w-7xl mx-auto px-8 mb-20 trips-hero-content">
                 <span className="inline-block py-1.5 px-4 rounded-full bg-ocean-blue/10 text-ocean-blue text-sm font-bold tracking-widest uppercase mb-6">World Wide Adventures</span>
-                <h1 className="text-6xl md:text-8xl font-poppins font-bold tracking-tight mb-8">
+                <h1 className="text-5xl md:text-8xl font-poppins font-bold tracking-tight mb-8">
                     Our <span className="text-ocean-blue">Journeys</span>
                 </h1>
                 <p className="text-xl text-gray-500 max-w-2xl font-light leading-relaxed">
@@ -222,7 +222,7 @@ export default function Trips() {
                                 </div>
                                 <span className="text-sunset-orange font-bold tracking-widest uppercase text-sm">Our Legacy</span>
                             </div>
-                            <h2 className="text-4xl md:text-6xl font-poppins font-bold mb-6">Previous Meets <span className="text-gray-400 font-light">&</span> Memories</h2>
+                            <h2 className="text-3xl md:text-6xl font-poppins font-bold mb-6">Previous Meets <span className="text-gray-400 font-light">&</span> Memories</h2>
                             <p className="text-gray-500 text-lg font-light leading-relaxed">
                                 Explore the trips we've already conquered. Click on any journey to see the full story, photo gallery, and the vibes we shared.
                             </p>
@@ -290,7 +290,7 @@ export default function Trips() {
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-ocean-blue/10 rounded-full blur-[120px]" />
                     <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-sunset-orange/10 rounded-full blur-[120px]" />
                     <div className="relative z-10">
-                        <h2 className="text-4xl md:text-6xl font-poppins font-bold text-white mb-8 tracking-tight">Stay in the Loop</h2>
+                        <h2 className="text-3xl md:text-6xl font-poppins font-bold text-white mb-8 tracking-tight">Stay in the Loop</h2>
                         <p className="text-gray-400 max-w-2xl mx-auto mb-12 text-xl font-light leading-relaxed">
                             Join our community for early access to upcoming journeys.
                         </p>

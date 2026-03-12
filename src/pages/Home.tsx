@@ -89,7 +89,7 @@ export default function Home() {
             slug: 'kovalam-beach',
             name: 'Kovalam Beach',
             location: 'Kerala, India',
-            image: 'https://images.unsplash.com/photo-1627000086207-77e8fd7d706f?q=80&w=1000&auto=format&fit=crop',
+            image: '/images/kovalam_hero.png',
             shortDesc: 'Experience the serene beaches and lighthouse of Kovalam. A perfect weekend getaway.',
             duration: '3 Days',
             price: 5999,
@@ -99,7 +99,7 @@ export default function Home() {
             slug: 'tada-waterfalls',
             name: 'Tada Waterfalls',
             location: 'Andhra Pradesh, India',
-            image: 'https://images.unsplash.com/photo-1542856334-2e2eaa88a71f?q=80&w=1000&auto=format&fit=crop',
+            image: '/images/aare_falls.png',
             shortDesc: 'A refreshing trek to the hidden falls of Tada. Perfect for a quick escape from the city.',
             duration: '1 Day',
             price: 1499,
@@ -109,7 +109,7 @@ export default function Home() {
             slug: 'aarey-falls',
             name: 'Aarey Hidden Falls',
             location: 'Mumbai, India',
-            image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1000&auto=format&fit=crop',
+            image: '/images/mountain_trek.png',
             shortDesc: 'Explore the secret monsoon trails and hidden falls right in the heart of the city.',
             duration: '1 Day',
             price: 999,
@@ -139,7 +139,7 @@ export default function Home() {
                         <span className="hero-badge inline-block py-1.5 px-4 rounded-full bg-white/10 backdrop-blur-md text-white border border-white/20 mb-6 text-sm font-medium tracking-wide">
                             Choose Your Next Adventure
                         </span>
-                        <h1 className="hero-title text-4xl md:text-6xl font-poppins font-bold text-white tracking-tight mb-8 leading-tight">
+                        <h1 className="hero-title text-5xl md:text-6xl font-poppins font-bold text-white tracking-tight mb-8 leading-tight">
                             Your Next Adventure <br /> <span className="text-ocean-blue">Starts Here.</span>
                         </h1>
                         <p className="hero-desc text-xl md:text-2xl text-white mb-10 max-w-3xl mx-auto font-medium leading-relaxed drop-shadow-lg opacity-90">
@@ -181,7 +181,7 @@ export default function Home() {
                                     <span className="inline-block py-2 px-6 rounded-full bg-ocean-blue/10 text-ocean-blue text-xs font-bold tracking-[0.2em] uppercase border border-ocean-blue/20">
                                         Our Impact
                                     </span>
-                                    <h2 className="text-5xl md:text-7xl font-poppins font-bold text-white leading-[1.1] tracking-tighter">
+                                    <h2 className="text-4xl md:text-7xl font-poppins font-bold text-white leading-[1.1] tracking-tighter">
                                         Trusted by <br />
                                         <span className="text-ocean-blue">500+ Travelers.</span>
                                     </h2>
@@ -247,27 +247,21 @@ export default function Home() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
                     {/* Visual Collage - Left Side on Desktop */}
                     <div className="lg:col-span-6 order-2 lg:order-1 relative">
-                        <div className="relative z-10 grid grid-cols-2 gap-4">
-                            <div className="space-y-4 pt-12">
-                                <div className="reveal-section rounded-[2.5rem] overflow-hidden shadow-2xl aspect-[4/5] transform -rotate-2">
-                                    <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?q=80&w=2000&auto=format&fit=crop" alt="Community" className="w-full h-full object-cover transition-transform duration-700 hover:scale-110" />
+                        <div className="grid grid-cols-2 gap-4 md:gap-8">
+                            <div className="space-y-4 md:space-y-8">
+                                <div className="reveal-section h-[200px] md:h-[300px] rounded-[2.5rem] overflow-hidden border border-white/10 group">
+                                    <img src="/images/community_vibe.png" className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110" alt="Travel Community" />
                                 </div>
-                                <div className="reveal-section rounded-[2.5rem] overflow-hidden shadow-2xl aspect-square bg-ocean-blue/10 flex items-center justify-center p-8 border border-ocean-blue/20">
-                                    <div className="text-center">
-                                        <Heart className="w-12 h-12 text-ocean-blue mx-auto mb-4 animate-pulse" />
-                                        <p className="font-poppins font-bold text-ocean-blue text-sm uppercase tracking-widest leading-tight">Shared<br />Moments</p>
-                                    </div>
+                                <div className="reveal-section h-[250px] md:h-[400px] rounded-[2.5rem] overflow-hidden border border-white/10 group">
+                                    <img src="/images/explorer.png" className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110" alt="Solo Traveler" />
                                 </div>
                             </div>
-                            <div className="space-y-4">
-                                <div className="reveal-section rounded-[2.5rem] overflow-hidden shadow-2xl aspect-square bg-zinc-900 flex items-center justify-center p-8">
-                                    <div className="text-center">
-                                        <Globe className="w-12 h-12 text-white/50 mx-auto mb-4" />
-                                        <p className="font-poppins font-bold text-white text-sm uppercase tracking-widest leading-tight">Limitless<br />Borders</p>
-                                    </div>
+                            <div className="space-y-4 md:space-y-8 pt-8 md:pt-16">
+                                <div className="reveal-section h-[250px] md:h-[400px] rounded-[2.5rem] overflow-hidden border border-white/10 group">
+                                    <img src="/images/mountain_trek.png" className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110" alt="Mountain Trek" />
                                 </div>
-                                <div className="reveal-section rounded-[2.5rem] overflow-hidden shadow-2xl aspect-[4/5] transform rotate-2">
-                                    <img src="https://images.unsplash.com/photo-1502791451862-7bd8c1df43a7?q=80&w=2000&auto=format&fit=crop" alt="Explorer" className="w-full h-full object-cover transition-transform duration-700 hover:scale-110" />
+                                <div className="reveal-section h-[200px] md:h-[300px] rounded-[2.5rem] overflow-hidden border border-white/10 group">
+                                    <img src="/images/beach_breakfast.png" className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110" alt="Beach Breakfast" />
                                 </div>
                             </div>
                         </div>
@@ -280,7 +274,7 @@ export default function Home() {
                     <div className="lg:col-span-6 order-1 lg:order-2 space-y-10">
                         <div className="reveal-section">
                             <span className="inline-block py-2 px-6 rounded-full bg-ocean-blue/5 text-ocean-blue text-xs font-bold tracking-[0.2em] uppercase mb-6 border border-ocean-blue/10">The Chapter AAA Way</span>
-                            <h2 className="text-5xl md:text-7xl font-poppins font-bold mb-8 leading-[1.1] tracking-tighter">
+                            <h2 className="text-4xl md:text-7xl font-poppins font-bold mb-8 leading-[1.1] tracking-tighter">
                                 Travel With a <br />
                                 <span className="text-ocean-blue">Purpose.</span>
                             </h2>
@@ -328,7 +322,7 @@ export default function Home() {
             <section id="trips" className="py-24 px-8 max-w-7xl mx-auto reveal-section z-10 relative">
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
                     <div className="max-w-2xl">
-                        <h2 className="text-4xl md:text-5xl font-poppins font-bold tracking-tight mb-4">
+                        <h2 className="text-3xl md:text-5xl font-poppins font-bold tracking-tight mb-4">
                             Explore Our <span className="text-sunset-orange">Trips</span>
                         </h2>
                         <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
@@ -378,7 +372,7 @@ export default function Home() {
                                     title: 'Explore Trips',
                                     vibe: 'Namma Curated Trips!',
                                     desc: 'Namma curated trips list la browse pannunga and ungalukku excite aagura destination ah choose pannunga.',
-                                    image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop',
+                                    image: '/images/planning.png',
                                     align: 'left'
                                 },
                                 {
@@ -386,7 +380,7 @@ export default function Home() {
                                     title: 'Check Trip Details',
                                     vibe: 'Full Intel Briefing!',
                                     desc: 'Trip pathi full details paathukonga — photos, itinerary, reviews ellam check pannitu trip vibe purinjukonga.',
-                                    image: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=2070&auto=format&fit=crop',
+                                    image: '/images/beach_breakfast.png',
                                     align: 'right'
                                 },
                                 {
@@ -394,7 +388,7 @@ export default function Home() {
                                     title: 'Pick Your Date',
                                     vibe: 'Comfortable Dates!',
                                     desc: 'Ungalukku comfortable ah irukkura date select pannunga and seat secure pannunga.',
-                                    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop',
+                                    image: '/images/mountain_trek.png',
                                     align: 'left'
                                 },
                                 {
@@ -402,7 +396,7 @@ export default function Home() {
                                     title: 'Clear Doubts & Book',
                                     vibe: 'Final Boarding!',
                                     desc: 'Yedhavathu doubt irundha ask pannunga. Everything clear na book pannitu adventure start pannunga!',
-                                    image: 'https://images.unsplash.com/photo-1433086566277-ac08816c33aa?q=80&w=2070&auto=format&fit=crop',
+                                    image: '/images/community_vibe.png',
                                     align: 'right'
                                 }
                             ].map((step, i) => (
@@ -470,7 +464,7 @@ export default function Home() {
                                 <span className="inline-block py-2 px-6 rounded-full bg-ocean-blue/10 text-ocean-blue text-xs font-bold tracking-[0.2em] uppercase border border-ocean-blue/20">
                                     The Chapter AAA Vibe
                                 </span>
-                                <h2 className="text-5xl md:text-7xl font-poppins font-bold leading-[1.1] tracking-tighter">
+                                <h2 className="text-4xl md:text-7xl font-poppins font-bold leading-[1.1] tracking-tighter">
                                     More Than a Trip. <br />
                                     <span className="text-ocean-blue italic">It's a Tribe.</span>
                                 </h2>
@@ -510,7 +504,7 @@ export default function Home() {
                         <div className="relative">
                             <div className="relative rounded-[3rem] overflow-hidden aspect-[4/5] shadow-2xl border border-white/10">
                                 <img
-                                    src="https://images.unsplash.com/photo-1522881451255-f59ad836fdfb?auto=format&fit=crop&q=80&w=1000"
+                                    src="/images/community_vibe.png"
                                     alt="Community Vibe"
                                     className="w-full h-full object-cover"
                                 />
@@ -576,9 +570,24 @@ export default function Home() {
                                 q: 'Do I need travel insurance?',
                                 tamil: 'Insurance kandippa venuma?',
                                 a: 'Mandatory. We prioritize safety protocol above all else to ensure a stress-free deployment.'
+                            },
+                            {
+                                q: 'Vera Doubt Irukku!',
+                                tamil: 'Namma team-kitta kekaணுma?',
+                                a: 'Redirecting you to our WhatsApp support... Namma team ready ah irukkom!'
                             }
                         ].map((faq, idx) => (
-                            <details key={idx} className="group bg-white/[0.02] rounded-[1.5rem] border border-white/5 transition-all duration-500 hover:border-ocean-blue/30 cursor-pointer overflow-hidden">
+                            <details 
+                                key={idx} 
+                                className="group bg-white/[0.02] rounded-[1.5rem] border border-white/5 transition-all duration-500 hover:border-ocean-blue/30 cursor-pointer overflow-hidden"
+                                onToggle={(e: any) => {
+                                    if (e.target.open && faq.q.includes("Vera Doubt")) {
+                                        const whatsappNumber = "918838111564";
+                                        const message = encodeURIComponent("Hi Chapter AAA, I have some doubts regarding the trips. Can you help me?");
+                                        window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+                                    }
+                                }}
+                            >
                                 <summary className="px-8 py-8 flex items-center justify-between list-none outline-none">
                                     <div className="flex flex-col text-left">
                                         <span className="text-[0.55rem] text-ocean-blue font-black uppercase tracking-[0.3em] mb-1 opacity-40">"{faq.tamil}"</span>
@@ -599,7 +608,11 @@ export default function Home() {
                         <div className="flex -space-x-3">
                             {[1, 2, 3].map(i => <div key={i} className="w-10 h-10 rounded-full border-2 border-zinc-950 bg-zinc-900 overflow-hidden"><img src={`https://i.pravatar.cc/150?u=support${i}`} /></div>)}
                         </div>
-                        <p className="text-gray-500 text-sm font-light">Vera query irukka? <button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} className="text-white font-bold hover:text-ocean-blue transition-colors underline underline-offset-4 cursor-pointer">Live Briefing Kelunga</button></p>
+                        <p className="text-gray-500 text-sm font-light">Vera query irukka? <button onClick={() => {
+                            const whatsappNumber = "918838111564";
+                            const message = encodeURIComponent("Hi Chapter AAA, I have some doubts regarding the trips. Can you help me?");
+                            window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+                        }} className="text-white font-bold hover:text-ocean-blue transition-colors underline underline-offset-4 cursor-pointer">Live Briefing Kelunga</button></p>
                     </div>
                 </div>
             </section>

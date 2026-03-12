@@ -50,7 +50,7 @@ export default function TripDetails() {
             duration: '1 Day',
             dateRange: 'Mar 15, 2026',
             price: 1999,
-            bgImage: 'https://images.unsplash.com/photo-1627000086207-77e8fd7d706f?q=80&w=2000&auto=format&fit=crop',
+            bgImage: '/images/kovalam_hero.png',
             desc: "Join us for a magical morning at the rock beach. We witness the first light together at the Promenade, followed by a community breakfast and localized exploration.\n\nMorning begins with discovering beautiful locations and scenic spots. Afternoons are for experiences, activities, and exploring hidden gems."
         },
         'aare-falls-mar-15': {
@@ -59,7 +59,7 @@ export default function TripDetails() {
             duration: '1 Day',
             dateRange: 'Mar 15, 2026 (Sold Out)',
             price: 1499,
-            bgImage: 'https://images.unsplash.com/photo-1542856334-2e2eaa88a71f?q=80&w=2000&auto=format&fit=crop',
+            bgImage: '/images/aare_falls.png',
             desc: "A refreshing trek to the hidden falls of Aare. Perfect for a quick escape from the city. This particular slot is currently full, but you can join us the following week!\n\nLush trails, cold dips, and strong community building."
         },
         'aare-falls-mar-22': {
@@ -68,7 +68,7 @@ export default function TripDetails() {
             duration: '1 Day',
             dateRange: 'Mar 22, 2026',
             price: 1499,
-            bgImage: 'https://images.unsplash.com/photo-1542856334-2e2eaa88a71f?q=80&w=2000&auto=format&fit=crop',
+            bgImage: '/images/aare_falls.png',
             desc: "A second chance to explore the hidden trails of Aare. Perfect for city dwellers seeking a quick nature fix.\n\nMorning begins with discovering beautiful locations and scenic spots."
         },
         'sunrise-kovalam-mar-22': {
@@ -77,7 +77,7 @@ export default function TripDetails() {
             duration: '1 Day',
             dateRange: 'Mar 22, 2026',
             price: 1999,
-            bgImage: 'https://images.unsplash.com/photo-1627000086207-77e8fd7d706f?q=80&w=2000&auto=format&fit=crop',
+            bgImage: '/images/kovalam_hero.png',
             desc: "Sunday morning magic at Kovalam. Peace, waves, and community. We gather to watch the sky turn gold over the lighthouse."
         },
         'sunrise-at-kovalam-past-1': {
@@ -86,7 +86,7 @@ export default function TripDetails() {
             duration: '1 Day',
             dateRange: 'Feb 2026 (Completed)',
             price: 0,
-            bgImage: 'https://images.unsplash.com/photo-1627000086207-77e8fd7d706f?q=80&w=2000&auto=format&fit=crop',
+            bgImage: '/images/kovalam_hero.png',
             desc: "Reliving the magical morning at the lighthouse beach. A hallmark of our community adventures."
         },
         'aare-falls-past-1': {
@@ -95,7 +95,7 @@ export default function TripDetails() {
             duration: '1 Day',
             dateRange: 'Jan 2026 (Completed)',
             price: 0,
-            bgImage: 'https://images.unsplash.com/photo-1588392382834-a8af4fce2ae3?q=80&w=1000&auto=format&fit=crop',
+            bgImage: '/images/aare_falls.png',
             desc: "Our previous trek to the hidden waterfalls. Lush trails, cold dips, and strong community building."
         }
     };
@@ -113,14 +113,14 @@ export default function TripDetails() {
         { q: "C. Vibes Epdi Irkum?", a: "Expect a friendly and welcoming environment where travelers connect, explore new places, and share unforgettable experiences together. Semma vibe guaranteed!" },
         { q: "D. Can women join?", a: "Absolutely. Our trips are designed to be safe, inclusive, and welcoming for everyone." },
         { q: "E. Is this legit?", a: "Yes. Chapter AAA has hosted hundreds of travelers and is trusted by a growing community of explorers." },
-        { q: "F. Vera Doubt Iruku!", a: "Redirecting you to our contact page..." }
+        { q: "F. Vera Doubt Iruku!", a: "Redirecting you to our WhatsApp support... Namma team ready ah irukkom!" },
     ];
 
     const galleryImages = [
-        'https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&q=80&w=1000',
-        'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&q=80&w=1000',
-        'https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&q=80&w=1000',
-        'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&q=80&w=1000'
+        '/images/kovalam_hero.png',
+        '/images/beach_breakfast.png',
+        '/images/mountain_trek.png',
+        '/images/community_vibe.png'
     ];
 
     return (
@@ -183,7 +183,7 @@ export default function TripDetails() {
 
                     {/* Video Section */}
                     <section className="fade-in relative rounded-3xl overflow-hidden h-[400px] flex items-center justify-center group cursor-pointer">
-                        <img src="https://images.unsplash.com/photo-1542332213-31f87348057f?auto=format&fit=crop&q=80&w=1000" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Video cover" />
+                        <img src="/images/explorer.png" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Video cover" />
                         <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors" />
                         <div className="relative z-10 text-center">
                             <PlayCircle className="w-20 h-20 text-white opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all mx-auto mb-4" />
@@ -234,12 +234,9 @@ export default function TripDetails() {
                                     className="group bg-zinc-50 dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-200 dark:border-zinc-800 transition-all duration-300"
                                     onToggle={(e: any) => {
                                         if (e.target.open && faq.q.includes("Vera Doubt")) {
-                                            const contactSection = document.getElementById('contact');
-                                            if (contactSection) {
-                                                contactSection.scrollIntoView({ behavior: 'smooth' });
-                                            } else {
-                                                window.location.href = '/#contact';
-                                            }
+                                            const whatsappNumber = "918838111564";
+                                            const message = encodeURIComponent("Hi Chapter AAA, I have some doubts regarding the trip. Can you help me?");
+                                            window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
                                         }
                                     }}
                                 >
