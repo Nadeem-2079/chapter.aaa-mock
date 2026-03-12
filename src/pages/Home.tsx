@@ -125,7 +125,7 @@ export default function Home() {
                 <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
                     <div
                         className="w-full h-[120%] bg-cover bg-center home-hero-bg"
-                        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=2000&auto=format&fit=crop")' }}
+                        style={{ backgroundImage: 'url("/images/kovalam_hero.png")' }}
                     />
                     {/* Consistent dark overlay for text legibility */}
                     <div className="absolute inset-0 bg-black/60" />
